@@ -28,3 +28,10 @@ These are default credentials often used for local development or testing purpos
 
 - localhost:5672: It represents the host and port of the AMQP server. localhost means the server is running on the local machine
 and 5672 is the default port number for AMQP communication.
+
+**c. Simulation slow subscriber.**
+
+![Chart Slow RabbitMQ](https://cdn.discordapp.com/attachments/1111642397248598067/1231982620850524322/image.png?ex=6638f039&is=66267b39&hm=6a8f131ab69691b6035307050c48c7569ec132b23bd1b94c072d58f3faa71e67&)
+
+In the graph above, I have rapidly executed the publisher 6 times, evidenced by the queued messages totaling 30. 
+This means that there are 30 messages in the queue awaiting consumption by the subscriber.
